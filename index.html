@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOMALEATHER — Precision in Every Stitch</title>
+  <!-- Fonts: Playfair Display for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            champagne: '#C8A97E',
+            deepbrown: '#3A2518',
+            charcoal: '#1B1B1B',
+            sand: '#F4E9D6'
+          },
+          boxShadow: {
+            soft: '0 24px 80px rgba(0, 0, 0, 0.16)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #080604;
+      color: #F4E9D6;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+    .text-gold {
+      color: #C8A97E;
+    }
+    .transition-smooth {
+      transition: all 0.35s ease;
+    }
+    .text-shadow-soft {
+      text-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+    }
+    .bg-image-cover {
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- Site wrapper -->
+  <div class="relative overflow-hidden">
+    <!-- Header / hero with background image -->
+    <header class="relative bg-charcoal">
+      <div class="absolute inset-0 bg-deepbrown/75 backdrop-blur-sm"></div>
+      <div class="absolute inset-0 bg-[url('Soma.jpg')] bg-cover bg-center opacity-90"></div>
+      <div class="relative z-10 mx-auto max-w-7xl px-6 pb-20 pt-8 sm:px-8 lg:px-12">
+        <nav class="flex items-center justify-between gap-6 text-sm text-sand/80">
+          <a href="#" class="inline-flex items-center gap-3">
+            <span class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-champagne/70 bg-champagne/10 text-sm font-semibold uppercase tracking-[0.28em] text-champagne transition-smooth hover:border-champagne hover:bg-champagne/15">S</span>
+            <span class="font-semibold tracking-[0.24em] uppercase text-sand/90">SOMALEATHER</span>
+          </a>
+          <div class="flex items-center gap-3">
+            <button class="language-switcher rounded-full border border-sand/20 px-4 py-2 text-sand/80 transition-smooth hover:border-sand hover:text-sand" data-lang="en">EN</button>
+            <button class="language-switcher rounded-full border border-sand/20 px-4 py-2 text-sand/80 transition-smooth hover:border-sand hover:text-sand" data-lang="fr">FR</button>
+            <button class="language-switcher rounded-full border border-sand/20 px-4 py-2 text-sand/80 transition-smooth hover:border-sand hover:text-sand" data-lang="lb">LU</button>
+          </div>
+        </nav>
+
+        <div class="mt-24 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+          <div class="max-w-2xl">
+            <p class="mb-4 uppercase tracking-[0.32em] text-sand/70" data-key="eyebrow">Bespoke leather goods from Luxembourg</p>
+            <h1 class="font-playfair text-4xl font-semibold leading-tight text-sand sm:text-5xl lg:text-6xl" data-key="heroHeadline">SOMALEATHER - Precision in Every Stitch</h1>
+            <p class="mt-8 max-w-xl text-sm leading-7 text-sand/80 sm:text-base md:text-lg" data-key="heroSubtext">A refined language of leather craftsmanship for bankers, leaders, and discerning clients seeking quiet luxury.</p>
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a href="#contact" class="inline-flex items-center justify-center rounded-full border border-champagne/80 bg-champagne/10 px-7 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-champagne transition-smooth hover:-translate-y-0.5 hover:bg-champagne/20" data-key="ctaButton">Request a Consultation</a>
+              <a href="#quality" class="inline-flex items-center justify-center rounded-full border border-sand/20 bg-transparent px-7 py-3 text-sm font-medium uppercase tracking-[0.2em] text-sand transition-smooth hover:border-champagne hover:text-champagne" data-key="exploreButton">Discover the ethos</a>
+            </div>
+          </div>
+          <div class="hidden lg:block">
+            <div class="rounded-3xl border border-sand/10 bg-black/20 p-8 shadow-soft backdrop-blur-xl">
+              <p class="text-sm uppercase tracking-[0.24em] text-sand/60" data-key="detailLabel">Private craftsmanship</p>
+              <h2 class="mt-4 text-3xl font-semibold text-sand" data-key="detailHeadline">A modern classic for the quiet professional</h2>
+              <p class="mt-4 leading-8 text-sand/75" data-key="detailText">Each creation is designed to sit seamlessly within a bespoke wardrobe, enhancing the unseen precision of daily essentials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="relative mx-auto max-w-7xl px-6 pb-24 pt-16 sm:px-8 lg:px-12">
+      <!-- About / story section -->
+      <section id="about" class="grid gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <div class="space-y-6">
+          <span class="inline-flex rounded-full border border-sand/20 bg-sand/10 px-4 py-2 text-xs uppercase tracking-[0.24em] text-sand/80" data-key="storyLabel">The Artisan's Journey</span>
+          <h2 class="text-4xl font-semibold text-sand sm:text-5xl" data-key="storyHeadline">From Heirloom Threads to Modern Precision</h2>
+          <div class="space-y-5 text-base leading-8 text-sand/80 sm:text-lg">
+            <p data-key="storyParagraph1">My journey into craftsmanship didn't begin in a workshop; it began with the rhythm of my family's sewing machines. Born into a lineage of master tailors, I spent my childhood observing how a single thread could define a garment. By the age of six, I was already behind the workbench, learning the intricate art of hand-stitching suit collars and precision-hemming—skills that were once the pride of my entire hometown.</p>
+            <p data-key="storyParagraph2">Life took me through a decade of mastery in global logistics, followed by ten years in the demanding world of international banking in Poland. Throughout these years, the discipline of finance and the logic of supply chains became second nature.</p>
+            <p data-key="storyParagraph3">Today, living in Luxembourg, I have returned to my roots. I see my craft not just as leatherwork, but as a bridge between the heritage of my ancestors and the refined needs of the modern professional. Every key cover, watch strap, and laptop sleeve I create is a synthesis of banking-grade precision and a lifetime of artisan tradition. My work is designed for the discerning individual who appreciates the beauty of the 'hidden' detail—quality that is felt, rather than shouted.</p>
+            <p data-key="storyParagraph4">This is my craft. This is my commitment to Luxembourg.</p>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-4">
+            <span class="rounded-full border border-sand/20 bg-black/40 px-5 py-3 text-sm uppercase tracking-[0.18em] text-sand/80" data-key="brandName">Brand name: SOMALEATHER</span>
+          </div>
+        </div>
+        <div class="relative overflow-hidden rounded-[2.5rem] border border-sand/10 bg-sand/5 p-1 shadow-soft">
+          <img src="Soma.jpg" alt="SOMALEATHER artisan detail" class="h-full w-full object-cover transition-smooth duration-500 hover:scale-[1.02]" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+        </div>
+      </section>
+
+      <!-- Product gallery with lightbox -->
+      <section id="gallery" class="mt-24">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <span class="inline-flex rounded-full border border-sand/20 bg-sand/10 px-4 py-2 text-xs uppercase tracking-[0.24em] text-sand/80" data-key="galleryLabel">Products</span>
+            <h2 class="mt-4 text-4xl font-semibold text-sand sm:text-5xl" data-key="galleryHeadline">Essential pieces for a refined everyday</h2>
+          </div>
+          <p class="max-w-xl text-sm leading-7 text-sand/70 sm:text-base" data-key="galleryText">Click any image to inspect the leather grain, stitch definition, and refined finish in a high-quality lightbox view.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          <button type="button" class="group overflow-hidden rounded-[2rem] border border-sand/10 bg-charcoal/80 p-0 text-left transition-smooth hover:-translate-y-1 hover:border-champagne/40" data-lightbox="bocchiakhoa.jpg" data-title="Car Key Cover" data-description="Engineered for the perfect fit, with meticulous edgework and discreet luxury." aria-label="View Car Key Cover">
+            <div class="relative h-80 overflow-hidden bg-black">
+              <img src="bocchiakhoa.jpg" alt="Car key cover sample" class="h-full w-full object-cover transition-smooth duration-500 group-hover:scale-105" />
+            </div>
+            <div class="space-y-2 p-6">
+              <p class="text-xs uppercase tracking-[0.3em] text-sand/60" data-key="productLabel1">Car Key Covers</p>
+              <h3 class="text-2xl font-semibold text-sand" data-key="productTitle1">Car key covers</h3>
+              <p class="text-sm leading-6 text-sand/70" data-key="productText1">Sculpted edges and quiet comfort for automotive essentials. Image used: bocchiakhoa.jpg.</p>
+            </div>
+          </button>
+
+          <button type="button" class="group overflow-hidden rounded-[2rem] border border-sand/10 bg-charcoal/80 p-0 text-left transition-smooth hover:-translate-y-1 hover:border-champagne/40" data-lightbox="1-4.jpg" data-title="Watch Strap" data-description="Hand-stitched straps for an exceptional wearable experience." aria-label="View Watch Strap">
+            <div class="relative h-80 overflow-hidden bg-black">
+              <img src="1-4.jpg" alt="Watch strap sample" class="h-full w-full object-cover transition-smooth duration-500 group-hover:scale-105" />
+            </div>
+            <div class="space-y-2 p-6">
+              <p class="text-xs uppercase tracking-[0.3em] text-sand/60" data-key="productLabel2">Watch Straps</p>
+              <h3 class="text-2xl font-semibold text-sand" data-key="productTitle2">Watch straps</h3>
+              <p class="text-sm leading-6 text-sand/70" data-key="productText2">Refined comfort, uncompromising fit, created for the rhythm of an executive day. Image used: 1-4.jpg.</p>
+            </div>
+          </button>
+
+          <button type="button" class="group overflow-hidden rounded-[2rem] border border-sand/10 bg-charcoal/80 p-0 text-left transition-smooth hover:-translate-y-1 hover:border-champagne/40" data-lightbox="Soma.jpg" data-title="Laptop Sleeve" data-description="Structured protection with polished leather and immaculate joins." aria-label="View Laptop Sleeve">
+            <div class="relative h-80 overflow-hidden bg-black">
+              <img src="Soma.jpg" alt="Laptop sleeve sample" class="h-full w-full object-cover transition-smooth duration-500 group-hover:scale-105" />
+            </div>
+            <div class="space-y-2 p-6">
+              <p class="text-xs uppercase tracking-[0.3em] text-sand/60" data-key="productLabel3">Laptop Sleeves</p>
+              <h3 class="text-2xl font-semibold text-sand" data-key="productTitle3">Laptop sleeves</h3>
+              <p class="text-sm leading-6 text-sand/70" data-key="productText3">A discreet second skin for your essentials, crafted with Luxembourg care.</p>
+            </div>
+          </button>
+
+          <button type="button" class="group overflow-hidden rounded-[2rem] border border-sand/10 bg-charcoal/80 p-0 text-left transition-smooth hover:-translate-y-1 hover:border-champagne/40" data-lightbox="2-14.jpg" data-title="Glasses Case" data-description="A leather glasses case with protective structure and elegant details." aria-label="View Glasses Case">
+            <div class="relative h-80 overflow-hidden bg-black">
+              <img src="2-14.jpg" alt="Glasses case sample" class="h-full w-full object-cover transition-smooth duration-500 group-hover:scale-105" />
+            </div>
+            <div class="space-y-2 p-6">
+              <p class="text-xs uppercase tracking-[0.3em] text-sand/60" data-key="productLabel4">Glasses Cases</p>
+              <h3 class="text-2xl font-semibold text-sand" data-key="productTitle4">Glasses case</h3>
+              <p class="text-sm leading-6 text-sand/70" data-key="productText4">Protective luxury for your eyewear, shown in 2-14.jpg, 3-25.jpg and baokinh.jpg.</p>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <!-- Reviews section -->
+      <section id="reviews" class="mt-20 rounded-[2.5rem] border border-sand/10 bg-black/40 px-6 py-10 shadow-soft backdrop-blur-xl sm:px-10 sm:py-14">
+        <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div class="space-y-4">
+            <span class="inline-flex rounded-full border border-sand/20 bg-sand/10 px-4 py-2 text-xs uppercase tracking-[0.24em] text-sand/80">Reviews</span>
+            <h2 class="text-4xl font-semibold text-sand sm:text-5xl">What discerning clients say</h2>
+            <p class="max-w-xl text-base leading-8 text-sand/70">Feedback from private clients and executives who value quiet luxury, precise execution, and genuinely thoughtful craft.</p>
+          </div>
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="rounded-[2rem] border border-sand/10 bg-charcoal/70 p-6 text-sand/80">
+              <p class="text-lg leading-8 text-sand">“A rare blend of tactical precision and quiet luxury. The handmade watch strap is impeccable in every detail.”</p>
+              <p class="mt-6 text-sm uppercase tracking-[0.22em] text-sand/60">Fabien M., Kirchberg</p>
+            </div>
+            <div class="rounded-[2rem] border border-sand/10 bg-charcoal/70 p-6 text-sand/80">
+              <p class="text-lg leading-8 text-sand">“The car key cover feels extraordinary, every surface perfectly finished. It is exactly the understated companion I needed.”</p>
+              <p class="mt-6 text-sm uppercase tracking-[0.22em] text-sand/60">Anne L., Luxembourg City</p>
+            </div>
+            <div class="rounded-[2rem] border border-sand/10 bg-charcoal/70 p-6 text-sand/80 sm:col-span-2">
+              <p class="text-lg leading-8 text-sand">“The glasses case is discreet and sculpted, a beautiful balance of protection and elegant form for daily travel.”</p>
+              <p class="mt-6 text-sm uppercase tracking-[0.22em] text-sand/60">Thomas R., European finance executive</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox overlay -->
+      <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 p-6 opacity-0 transition-opacity duration-300" aria-modal="true" role="dialog">
+        <button id="lightboxClose" class="absolute right-6 top-6 inline-flex h-12 w-12 items-center justify-center rounded-full border border-sand/25 bg-black/60 text-sand transition-smooth hover:bg-sand hover:text-charcoal" aria-label="Close image viewer">×</button>
+        <div class="relative max-w-6xl overflow-hidden rounded-[2rem] bg-black shadow-soft">
+          <img id="lightboxImage" src="" alt="" class="max-h-[85vh] w-full object-contain" />
+          <div class="space-y-3 bg-black/80 px-6 py-5 text-sand sm:px-8">
+            <h3 id="lightboxTitle" class="text-2xl font-semibold"></h3>
+            <p id="lightboxDescription" class="max-w-3xl text-sm leading-7 text-sand/70"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quality commitment section -->
+      <section id="quality" class="mt-24 overflow-hidden rounded-[2.5rem] border border-sand/10 bg-gradient-to-br from-charcoal/70 via-black/50 to-charcoal/70 p-8 shadow-soft sm:p-12">
+        <div class="grid gap-10 lg:grid-cols-3">
+          <div class="space-y-4 rounded-[2rem] border border-sand/10 bg-black/40 p-8 backdrop-blur-md">
+            <span class="inline-flex rounded-full bg-sand/10 px-3 py-1 text-xs uppercase tracking-[0.24em] text-sand/60" data-key="pillar1Label">Pillar One</span>
+            <h3 class="text-2xl font-semibold text-sand" data-key="pillar1Title">Artisan Tradition</h3>
+            <p class="text-sm leading-7 text-sand/70" data-key="pillar1Text">Roots in tailoring, hand-finished edges, and every detail handcrafted for enduring elegance.</p>
+          </div>
+          <div class="space-y-4 rounded-[2rem] border border-sand/10 bg-black/40 p-8 backdrop-blur-md">
+            <span class="inline-flex rounded-full bg-sand/10 px-3 py-1 text-xs uppercase tracking-[0.24em] text-sand/60" data-key="pillar2Label">Pillar Two</span>
+            <h3 class="text-2xl font-semibold text-sand" data-key="pillar2Title">Banking-grade Precision</h3>
+            <p class="text-sm leading-7 text-sand/70" data-key="pillar2Text">Measured execution, refined geometry, and quality controls that match executive expectations.</p>
+          </div>
+          <div class="space-y-4 rounded-[2rem] border border-sand/10 bg-black/40 p-8 backdrop-blur-md">
+            <span class="inline-flex rounded-full bg-sand/10 px-3 py-1 text-xs uppercase tracking-[0.24em] text-sand/60" data-key="pillar3Label">Pillar Three</span>
+            <h3 class="text-2xl font-semibold text-sand" data-key="pillar3Title">Luxembourg Excellence</h3>
+            <p class="text-sm leading-7 text-sand/70" data-key="pillar3Text">Local craft, international standards and a quiet sense of refinement born in Luxembourg.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact form -->
+      <section id="contact" class="mt-24 rounded-[2.5rem] border border-sand/10 bg-black/40 px-6 py-10 shadow-soft backdrop-blur-xl sm:px-10 sm:py-14">
+        <div class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+          <div class="space-y-5">
+            <span class="inline-flex rounded-full border border-sand/20 bg-sand/10 px-4 py-2 text-xs uppercase tracking-[0.24em] text-sand/80" data-key="contactLabel">Contact</span>
+            <h2 class="text-4xl font-semibold text-sand sm:text-5xl" data-key="contactHeadline">Arrange your private consultation</h2>
+            <p class="max-w-xl text-base leading-8 text-sand/70" data-key="contactText">Share your requirements and receive a custom proposal for bespoke leather goods crafted with Luxembourg care.</p>
+            <div class="space-y-3 rounded-[1.5rem] border border-sand/10 bg-black/30 p-5 text-sm leading-7 text-sand/80">
+              <p class="font-semibold text-sand">43 Av. John F. Kennedy, 1855 Kirchberg, Luxembourg</p>
+              <p>WhatsApp: <a href="https://wa.me/352621402011" class="text-champagne hover:text-sand">+352 621 402 011</a></p>
+            </div>
+          </div>
+          <form class="grid gap-5 rounded-[2rem] border border-sand/10 bg-charcoal/70 p-6 sm:p-8" action="#" method="post">
+            <label class="space-y-2 text-sm text-sand/80">
+              <span data-key="formName">Name</span>
+              <input type="text" name="name" placeholder="Julia Muller" class="w-full rounded-2xl border border-sand/15 bg-black/70 px-4 py-3 text-sand outline-none transition-smooth focus:border-champagne/80 focus:ring-2 focus:ring-champagne/20" required />
+            </label>
+            <label class="space-y-2 text-sm text-sand/80">
+              <span data-key="formEmail">Email</span>
+              <input type="email" name="email" placeholder="contact@soma.lu" class="w-full rounded-2xl border border-sand/15 bg-black/70 px-4 py-3 text-sand outline-none transition-smooth focus:border-champagne/80 focus:ring-2 focus:ring-champagne/20" required />
+            </label>
+            <label class="space-y-2 text-sm text-sand/80">
+              <span data-key="formMessage">Project details</span>
+              <textarea name="message" rows="5" placeholder="Tell us about your bespoke request..." class="w-full rounded-2xl border border-sand/15 bg-black/70 px-4 py-3 text-sand outline-none transition-smooth focus:border-champagne/80 focus:ring-2 focus:ring-champagne/20" required></textarea>
+            </label>
+            <button type="submit" class="mt-3 inline-flex items-center justify-center rounded-full bg-champagne px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-charcoal transition-smooth hover:bg-champagne/90" data-key="formSubmit">Send request</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Translation and lightbox JavaScript -->
+  <script>
+    const translations = {
+      en: {
+        eyebrow: 'Bespoke leather goods from Luxembourg',
+        heroHeadline: 'SOMALEATHER - Precision in Every Stitch',
+        heroSubtext: 'A refined language of leather craftsmanship for bankers, leaders, and discerning clients seeking quiet luxury.',
+        ctaButton: 'Request a Consultation',
+        exploreButton: 'Discover the ethos',
+        detailLabel: 'Private craftsmanship',
+        detailHeadline: 'A modern classic for the quiet professional',
+        detailText: 'Each creation is designed to sit seamlessly within a bespoke wardrobe, enhancing the unseen precision of daily essentials.',
+        storyLabel: 'The Artisan\'s Journey',
+        storyHeadline: 'From Heirloom Threads to Modern Precision',
+        storyParagraph1: 'My journey into craftsmanship didn\'t begin in a workshop; it began with the rhythm of my family\'s sewing machines. Born into a lineage of master tailors, I spent my childhood observing how a single thread could define a garment. By the age of six, I was already behind the workbench, learning the intricate art of hand-stitching suit collars and precision-hemming—skills that were once the pride of my entire hometown.',
+        storyParagraph2: 'Life took me through a decade of mastery in global logistics, followed by ten years in the demanding world of international banking in Poland. Throughout these years, the discipline of finance and the logic of supply chains became second nature.',
+        storyParagraph3: 'Today, living in Luxembourg, I have returned to my roots. I see my craft not just as leatherwork, but as a bridge between the heritage of my ancestors and the refined needs of the modern professional. Every key cover, watch strap, and laptop sleeve I create is a synthesis of banking-grade precision and a lifetime of artisan tradition. My work is designed for the discerning individual who appreciates the beauty of the \'hidden\' detail—quality that is felt, rather than shouted.',
+        storyParagraph4: 'This is my craft. This is my commitment to Luxembourg.',
+        brandName: 'Brand name: SOMALEATHER',
+        galleryLabel: 'Products',
+        galleryHeadline: 'Essential pieces for a refined everyday',
+        galleryText: 'Click any image to inspect the leather grain, stitch definition, and refined finish in a high-quality lightbox view.',
+        productLabel1: 'Car Key Covers',
+        productTitle1: 'Car key covers',
+        productText1: 'Sculpted edges and quiet comfort for automotive essentials. Image used: bocchiakhoa.jpg.',
+        productLabel2: 'Watch Straps',
+        productTitle2: 'Watch straps',
+        productText2: 'Refined comfort, uncompromising fit, created for the rhythm of an executive day. Image used: 1-4.jpg.',
+        productLabel3: 'Laptop Sleeves',
+        productTitle3: 'Laptop sleeves',
+        productText3: 'A discreet second skin for your essentials, crafted with Luxembourg care.',
+        productLabel4: 'Glasses Cases',
+        productTitle4: 'Glasses case',
+        productText4: 'Protective luxury for your eyewear, shown in 2-14.jpg, 3-25.jpg and baokinh.jpg.',
+        pillar1Label: 'Pillar One',
+        pillar1Title: 'Artisan Tradition',
+        pillar1Text: 'Roots in tailoring, hand-finished edges, and every detail handcrafted for enduring elegance.',
+        pillar2Label: 'Pillar Two',
+        pillar2Title: 'Banking-grade Precision',
+        pillar2Text: 'Measured execution, refined geometry, and quality controls that match executive expectations.',
+        pillar3Label: 'Pillar Three',
+        pillar3Title: 'Luxembourg Excellence',
+        pillar3Text: 'Local craft, international standards and a quiet sense of refinement born in Luxembourg.',
+        contactLabel: 'Contact',
+        contactHeadline: 'Arrange your private consultation',
+        contactText: 'Share your requirements and receive a custom proposal for bespoke leather goods crafted with Luxembourg care.',
+        formName: 'Name',
+        formEmail: 'Email',
+        formMessage: 'Project details',
+        formSubmit: 'Send request'
+      },
+      fr: {
+        eyebrow: 'Articles en cuir sur-mesure depuis le Luxembourg',
+        heroHeadline: 'SOMALEATHER - Précision à chaque couture',
+        heroSubtext: 'Un savoir-faire cuir raffiné pour banquiers, dirigeants et clients exigeants en quête de luxe discret.',
+        ctaButton: 'Demander une consultation',
+        exploreButton: 'Découvrir l\'essence',
+        detailLabel: 'Artisanat privé',
+        detailHeadline: 'Un classique moderne pour le professionnel discret',
+        detailText: 'Chaque création est conçue pour s\'intégrer parfaitement à une garde-robe sur mesure, rehaussant la précision invisible des essentiels quotidiens.',
+        storyLabel: 'Le voyage de l\'artisan',
+        storyHeadline: 'Des fils hérités à la précision moderne',
+        storyParagraph1: 'Mon parcours artisanal n\'a pas commencé dans un atelier ; il a commencé au rythme des machines à coudre de ma famille. Né dans une lignée de maîtres tailleurs, j\'ai passé mon enfance à observer comment un seul fil pouvait définir un vêtement. À six ans, j\'étais déjà derrière l\'établi, apprenant l\'art complexe de la couture à la main des cols de costumes et de l\'ourlet de précision — des compétences qui faisaient autrefois la fierté de toute ma ville natale.',
+        storyParagraph2: 'La vie m\'a conduit à travers une décennie de maîtrise de la logistique mondiale, suivie de dix ans dans le monde exigeant de la banque internationale en Pologne. Pendant toutes ces années, la discipline de la finance et la logique des chaînes d\'approvisionnement sont devenues une seconde nature.',
+        storyParagraph3: 'Aujourd\'hui, vivant au Luxembourg, je suis revenu à mes racines. Je vois mon art non seulement comme du travail du cuir, mais comme un pont entre l\'héritage de mes ancêtres et les besoins raffinés du professionnel moderne. Chaque porte-clés, bracelet de montre et housse pour ordinateur portable que je crée est une synthèse de la précision bancaire et d\'une vie de tradition artisanale. Mon travail est conçu pour l\'individu exigeant qui apprécie la beauté du détail \'caché\' — une qualité qui se ressent, plutôt qu\'elle ne s\'affiche.',
+        storyParagraph4: 'Ceci est mon art. Ceci est mon engagement envers le Luxembourg.',
+        brandName: 'Nom de marque : SOMALEATHER',
+        galleryLabel: 'Produits',
+        galleryHeadline: 'Pièces essentielles pour un quotidien raffiné',
+        galleryText: 'Cliquez sur une image pour inspecter le grain du cuir, la définition des coutures et la finition dans une visionneuse haute qualité.',
+        productLabel1: 'Housses de clés de voiture',
+        productTitle1: 'Housses de clés de voiture',
+        productText1: 'Bords sculptés et confort discret pour les essentiels automobiles. Image utilisée : bocchiakhoa.jpg.',
+        productLabel2: 'Bracelets de montre',
+        productTitle2: 'Bracelets de montre',
+        productText2: 'Confort raffiné, ajustement impeccable, créé pour le rythme d\'une journée exécutive. Image utilisée : 1-4.jpg.',
+        productLabel3: 'Housses pour ordinateur',
+        productTitle3: 'Housses pour ordinateur',
+        productText3: 'Une seconde peau discrète pour vos essentiels, fabriquée avec le soin luxembourgeois.',
+        productLabel4: 'Étuis à lunettes',
+        productTitle4: 'Étui à lunettes',
+        productText4: 'Luxe protecteur pour vos lunettes, présenté sur 2-14.jpg, 3-25.jpg et baokinh.jpg.',
+        pillar1Label: 'Pilier Un',
+        pillar1Title: 'Tradition artisanale',
+        pillar1Text: 'Racines dans la couture, finitions manuelles, chaque détail façonné pour une élégance durable.',
+        pillar2Label: 'Pilier Deux',
+        pillar2Title: 'Précision bancaire',
+        pillar2Text: 'Exécution mesurée, géométrie raffinée et contrôles qualité à la hauteur des attentes des dirigeants.',
+        pillar3Label: 'Pilier Trois',
+        pillar3Title: 'Excellence luxembourgeoise',
+        pillar3Text: 'Artisanat local, standards internationaux et un sens du raffinement né au Luxembourg.',
+        contactLabel: 'Contact',
+        contactHeadline: 'Organisez votre consultation privée',
+        contactText: 'Partagez vos besoins et recevez une proposition personnalisée pour des articles en cuir sur mesure conçus avec le soin luxembourgeois.',
+        formName: 'Nom',
+        formEmail: 'Email',
+        formMessage: 'Détails du projet',
+        formSubmit: 'Envoyer la demande'
+      },
+      lb: {
+        eyebrow: 'Maacht-Lieder aus Lëtzebuerg',
+        heroHeadline: 'SOMALEATHER - Präzisioun bei all Naht',
+        heroSubtext: 'E raffinéierte Lieder-Savoir-faire fir Banker, Manager an aner Leit déi roueg Luxe schätzen.',
+        ctaButton: 'Fro eng Berodung un',
+        exploreButton: 'Entdeckt d\'Ethos',
+        detailLabel: 'Privat Handwierk',
+        detailHeadline: 'E modernen Klassiker fir de diskreten Profi',
+        detailText: 'All Création ass entworf fir séier an eng personaliséiert Garderob ze passen an déi onsichtbar Präzisioun vun den deegleche Basisartikelen ze ënnersträichen.',
+        storyLabel: 'D\'Aventuren vum Artisan',
+        storyHeadline: 'Vun Ierflécksfuedem bis modern Präzisioun',
+        storyParagraph1: 'Meng Rees an d\'Handwierk huet net an enger Werkstatt ugefaangen; se huet mam Rhythmus vun den Nähmaschinnen an menger Famill ugefaangen. Gebuer an enger Linn vun Meeschterdepartementer, hunn ech meng Kandheet domat verbruecht ze kucken, wéi een eenzegen Fuedem e Kleedungsstéck definéiere kann. Mat sechs Joer war ech scho hannert der Aarbechtsbank, geléiert den intrikaten Déngscht vun der Handnaht vun Jacketkraaft an der präziser Säumung — Kompetenzen, déi eemol de Stolz vun menger ganzer Gebuertsstad waren.',
+        storyParagraph2: 'D\'Liewen huet mech duerch eng Joerzéngt vun globaler Logistik gefouert, gefollegt vun zéng Joer an der ustrengender Welt vun internationaler Bankekonscht a Polen. Duerch déi ganz Joren gouf d\'Disziplin vun der Finance an d\'Logik vun de Liwwerketten meng zweet Natur.',
+        storyParagraph3: 'Haut, wunnen am Lëtzebuerg, sinn ech op meng Wuerzelen zréckkomm. Ech gesinn mäi Metier net nëmmen als Liederaarbecht, mä als eng Bréck tëscht dem Ierwen vun menge Virfahre an den raffinéiert Bedierfnesser vum modernen Profi. All Schlësselcover, Uhrenarmband a Laptophülle, déi ech kreéieren, ass eng Synthese aus Bankpräzisioun an enger Liewenslängt vun artisanaler Traditioun. Mäi Wierk ass fir déi distingéiert Persoun entworf, déi d\'Schéinheet vum \'verstoppten\' Detail appréciéiert — Qualitéit déi gefillt gëtt, amplaz zeréckgehalen ze ginn.',
+        storyParagraph4: 'Dat ass mäi Metier. Dat ass mäi Engagement fir Lëtzebuerg.',
+        brandName: 'Markennumm: SOMALEATHER',
+        galleryLabel: 'Produkter',
+        galleryHeadline: 'Wesentlech Stécker fir e raffinéiert Alldag',
+        galleryText: 'Klickt op jeeweils eng Bild fir de Liedergrénn, d\'Stéchdefinitioun an d\'raffinéiert Fäerdegstellung an engem héichwäertege Lightbox-Uschaungsmodus ze kucken.',
+        productLabel1: 'Auto-Schlësselcover',
+        productTitle1: 'Auto-Schlësselcover',
+        productText1: 'Geformte Kanten an roueg Komfort fir autokloer Essentials. Bild benotzt: bocchiakhoa.jpg.',
+        productLabel2: 'Uhrenarmbänner',
+        productTitle2: 'Uhrenarmbänner',
+        productText2: 'Raffinéierten Komfort, perfekt Passform, geschaf fir den Tempo vum Exekutivdag. Bild benotzt: 1-4.jpg.',
+        productLabel3: 'Laptophüllen',
+        productTitle3: 'Laptophüllen',
+        productText3: 'Eng diskret zweet Haut fir Är Vitaliséierungen, mat lëtzebuergeschem Sorgfalt geschaf.',
+        productLabel4: 'Brëllafäll',
+        productTitle4: 'Brëllafäll',
+        productText4: 'Schutzluxe fir Äert Brëll, gewisen op 2-14.jpg, 3-25.jpg a baokinh.jpg.',
+        pillar1Label: 'Säule Ee',
+        pillar1Title: 'Artisan Traditioun',
+        pillar1Text: 'Wuerzelen an der Näihandwierk, manuell fäerdeg Kanten an all Detail fir dauerhaft Eleganz gehäit.',
+        pillar2Label: 'Säule Zwei',
+        pillar2Title: 'Bankpräzisitéit',
+        pillar2Text: 'Moosswierdeg Ëmsetzung, raffinéiert Geometrie an Qualitéitskontrollen déi dem Erwaardungen entspriechen.',
+        pillar3Label: 'Säule Dräi',
+        pillar3Title: 'Lëtzebuergesch Exzellenz',
+        pillar3Text: 'Lokal Handwierk, international Standarden an e rouegen Sënn vu Raffinement aus dem Lëtzebuerg.',
+        contactLabel: 'Kontakt',
+        contactHeadline: 'Plangt Är privat Berodung',
+        contactText: 'Deelt Är Ufuerderungen a kritt eng personaliséiert Propositioun fir Maatstécker am Lieder mat lëtzebuergeschem Oofzuch.',
+        formName: 'Numm',
+        formEmail: 'E-Mail',
+        formMessage: 'Projetdetailer',
+        formSubmit: 'Ufro schécken'
+      }
+    };
+
+    const elements = document.querySelectorAll('[data-key]');
+    const languageButtons = document.querySelectorAll('.language-switcher');
+    let activeLanguage = 'en';
+
+    const applyTranslations = (lang) => {
+      elements.forEach((element) => {
+        const key = element.getAttribute('data-key');
+        if (translations[lang] && translations[lang][key]) {
+          element.textContent = translations[lang][key];
+        }
+      });
+    };
+
+    languageButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        activeLanguage = button.dataset.lang;
+        applyTranslations(activeLanguage);
+      });
+    });
+
+    applyTranslations(activeLanguage);
+
+    // Lightbox behavior for the product gallery
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxDescription = document.getElementById('lightboxDescription');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const galleryButtons = document.querySelectorAll('[data-lightbox]');
+
+    galleryButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const src = button.dataset.lightbox;
+        const title = button.dataset.title;
+        const description = button.dataset.description;
+        lightboxImage.src = src;
+        lightboxImage.alt = title;
+        lightboxTitle.textContent = title;
+        lightboxDescription.textContent = description;
+        lightbox.classList.remove('hidden');
+        requestAnimationFrame(() => {
+          lightbox.classList.add('opacity-100');
+        });
+        document.documentElement.classList.add('overflow-hidden');
+      });
+    });
+
+    const closeLightbox = () => {
+      lightbox.classList.remove('opacity-100');
+      lightbox.addEventListener('transitionend', () => {
+        lightbox.classList.add('hidden');
+      }, { once: true });
+      document.documentElement.classList.remove('overflow-hidden');
+    };
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
